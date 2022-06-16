@@ -95,13 +95,13 @@ Almost all materials can be bought from merchants, particularly if your reputati
 Materials have rarities, and many have subtypes.
 
 - Arcane Essence
-  - Divine
-  - Arcane
-  - Primal
+	- Divine
+	- Arcane
+	- Primal
 - Reagents
-  - Curative
-  - Reactive
-  - Poisonous
+	- Curative
+	- Reactive
+	- Poisonous
 - Metal (Ingots)
 	- Many Types of special metals
 - Magical Inks

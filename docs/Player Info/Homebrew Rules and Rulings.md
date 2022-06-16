@@ -1,7 +1,7 @@
 # Homebrew Rules and Rulings
 ###### tags: #player-info
 
-Some changes and rulings for my games.
+Some changes and rulings for this game taking place in Eberron.
 
 ## Character Creation
 

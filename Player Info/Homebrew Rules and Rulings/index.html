@@ -1,0 +1,1491 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>Homebrew Rules and Rulings - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#homebrew-rules-and-rulings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Homebrew Rules and Rulings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Eberron Salvage Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Player%20Introduction/" class="md-nav__link">
+        Player Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Player Info
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Player Info" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Player Info
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Artificer%20Infusion%20Replacements/" class="md-nav__link">
+        Artificer Infusion Replacements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Homebrew Rules and Rulings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Homebrew Rules and Rulings
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tags-player-info" class="md-nav__link">
+    tags: #player-info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-creation" class="md-nav__link">
+    Character Creation
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raceoriginlineage" class="md-nav__link">
+    Race/Origin/Lineage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motivations" class="md-nav__link">
+    Motivations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magic-items" class="md-nav__link">
+    Magic Items
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-changes" class="md-nav__link">
+    Class Changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-classes" class="md-nav__link">
+    All Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="All Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spellcasting" class="md-nav__link">
+    Spellcasting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artificer" class="md-nav__link">
+    Artificer
+  </a>
+  
+    <nav class="md-nav" aria-label="Artificer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infusions" class="md-nav__link">
+    Infusions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-additions" class="md-nav__link">
+    Feature Additions
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature Additions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project" class="md-nav__link">
+    Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ready-for-anything" class="md-nav__link">
+    Ready for Anything
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fighter" class="md-nav__link">
+    Fighter
+  </a>
+  
+    <nav class="md-nav" aria-label="Fighter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maneuvers" class="md-nav__link">
+    Maneuvers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranger" class="md-nav__link">
+    Ranger
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-replacements" class="md-nav__link">
+    Feature Replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rogue" class="md-nav__link">
+    Rogue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorcerer" class="md-nav__link">
+    Sorcerer
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorcerer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-of-magic" class="md-nav__link">
+    Font of Magic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metamagic" class="md-nav__link">
+    Metamagic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paladin" class="md-nav__link">
+    Paladin
+  </a>
+  
+    <nav class="md-nav" aria-label="Paladin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternate-smite-effects" class="md-nav__link">
+    Alternate Smite Effects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warlock" class="md-nav__link">
+    Warlock
+  </a>
+  
+    <nav class="md-nav" aria-label="Warlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invocation-spells" class="md-nav__link">
+    Invocation Spells
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wizard" class="md-nav__link">
+    Wizard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contraditions-to-raw" class="md-nav__link">
+    Contraditions to RAW
+  </a>
+  
+    <nav class="md-nav" aria-label="Contraditions to RAW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potions" class="md-nav__link">
+    Potions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spell-scrolls" class="md-nav__link">
+    Spell Scrolls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short-rests" class="md-nav__link">
+    Short Rests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fitful-rests" class="md-nav__link">
+    Fitful Rests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unseen-attackers" class="md-nav__link">
+    Unseen Attackers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heavily-obscured-areas" class="md-nav__link">
+    Heavily Obscured Areas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#augmentations-to-raw" class="md-nav__link">
+    Augmentations to RAW
+  </a>
+  
+    <nav class="md-nav" aria-label="Augmentations to RAW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#true-ritual-casting" class="md-nav__link">
+    True Ritual Casting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unexpected-stops" class="md-nav__link">
+    Unexpected Stops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exhaustion" class="md-nav__link">
+    Exhaustion
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#going-without-sleep" class="md-nav__link">
+    Going without sleep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exhaustive-magic" class="md-nav__link">
+    Exhaustive Magic
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustive Magic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Making%20Camp/" class="md-nav__link">
+        Making Camp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../necromancy%20things/" class="md-nav__link">
+        necromancy things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Crafting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Crafting" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Crafting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Arcanist/" class="md-nav__link">
+        Arcane Arts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Blacksmith/" class="md-nav__link">
+        Blacksmithing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Calligrapher/" class="md-nav__link">
+        Calligraphy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Chemist/" class="md-nav__link">
+        Chemistry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Crafting%20Overview/" class="md-nav__link">
+        Crafting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Culinary%20Artist/" class="md-nav__link">
+        Culinary Arts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Engineer/" class="md-nav__link">
+        Engineering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Textile%20Worker/" class="md-nav__link">
+        Textile Crafts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Tinkerer/" class="md-nav__link">
+        Tinkering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Crafting/Woodworker/" class="md-nav__link">
+        Woodworking
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tags-player-info" class="md-nav__link">
+    tags: #player-info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-creation" class="md-nav__link">
+    Character Creation
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raceoriginlineage" class="md-nav__link">
+    Race/Origin/Lineage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motivations" class="md-nav__link">
+    Motivations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magic-items" class="md-nav__link">
+    Magic Items
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-changes" class="md-nav__link">
+    Class Changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-classes" class="md-nav__link">
+    All Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="All Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spellcasting" class="md-nav__link">
+    Spellcasting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artificer" class="md-nav__link">
+    Artificer
+  </a>
+  
+    <nav class="md-nav" aria-label="Artificer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infusions" class="md-nav__link">
+    Infusions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-additions" class="md-nav__link">
+    Feature Additions
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature Additions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project" class="md-nav__link">
+    Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ready-for-anything" class="md-nav__link">
+    Ready for Anything
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fighter" class="md-nav__link">
+    Fighter
+  </a>
+  
+    <nav class="md-nav" aria-label="Fighter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maneuvers" class="md-nav__link">
+    Maneuvers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranger" class="md-nav__link">
+    Ranger
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-replacements" class="md-nav__link">
+    Feature Replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rogue" class="md-nav__link">
+    Rogue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorcerer" class="md-nav__link">
+    Sorcerer
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorcerer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-of-magic" class="md-nav__link">
+    Font of Magic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metamagic" class="md-nav__link">
+    Metamagic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paladin" class="md-nav__link">
+    Paladin
+  </a>
+  
+    <nav class="md-nav" aria-label="Paladin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternate-smite-effects" class="md-nav__link">
+    Alternate Smite Effects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warlock" class="md-nav__link">
+    Warlock
+  </a>
+  
+    <nav class="md-nav" aria-label="Warlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invocation-spells" class="md-nav__link">
+    Invocation Spells
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wizard" class="md-nav__link">
+    Wizard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contraditions-to-raw" class="md-nav__link">
+    Contraditions to RAW
+  </a>
+  
+    <nav class="md-nav" aria-label="Contraditions to RAW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potions" class="md-nav__link">
+    Potions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spell-scrolls" class="md-nav__link">
+    Spell Scrolls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short-rests" class="md-nav__link">
+    Short Rests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fitful-rests" class="md-nav__link">
+    Fitful Rests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unseen-attackers" class="md-nav__link">
+    Unseen Attackers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heavily-obscured-areas" class="md-nav__link">
+    Heavily Obscured Areas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#augmentations-to-raw" class="md-nav__link">
+    Augmentations to RAW
+  </a>
+  
+    <nav class="md-nav" aria-label="Augmentations to RAW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#true-ritual-casting" class="md-nav__link">
+    True Ritual Casting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unexpected-stops" class="md-nav__link">
+    Unexpected Stops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exhaustion" class="md-nav__link">
+    Exhaustion
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#going-without-sleep" class="md-nav__link">
+    Going without sleep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exhaustive-magic" class="md-nav__link">
+    Exhaustive Magic
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustive Magic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="homebrew-rules-and-rulings">Homebrew Rules and Rulings<a class="headerlink" href="#homebrew-rules-and-rulings" title="Permanent link">&para;</a></h1>
+<h6 id="tags-player-info">tags: #player-info<a class="headerlink" href="#tags-player-info" title="Permanent link">&para;</a></h6>
+<p>Some changes and rulings for this game taking place in Eberron.</p>
+<h2 id="character-creation">Character Creation<a class="headerlink" href="#character-creation" title="Permanent link">&para;</a></h2>
+<h3 id="raceoriginlineage">Race/Origin/Lineage<a class="headerlink" href="#raceoriginlineage" title="Permanent link">&para;</a></h3>
+<p>All races are available except Variant Human, use Custom Lineage from Tasha's instead. Highly recommend using the rules from Tasha's for origin ability score customization.</p>
+<p>If you're playing something from a book that isn't the PHB, Volo's or Eberron, reach out to me to make sure the backstory fits.</p>
+<p>Some Eberron Races in particular might have in-story baggage that you should be aware of:
+- Warforged are struggling to find their place in the post-war world, and there are plenty of opinions from plenty of people about what that place is. These attitudes are fair game for me to play with.
+- Dragonmarked variants of races typically have at least some ties to the Guild of that Mark, even if they have left the guild service formally, they at least know people there. Those strings are fair game for me to pull.
+- Some races are from nations which might have or recently have had conflicts with other nations, and those bonds are fair game for me to tug on.</p>
+<h3 id="motivations">Motivations<a class="headerlink" href="#motivations" title="Permanent link">&para;</a></h3>
+<p>Your character will be the most motivated to play through this campaign's story if they are motivated by either:
+- Favor with a particular Guild or Faction (will have a list)
+- Cold hard Cash
+- General exploration and discovery of the unknowns</p>
+<hr />
+<h2 id="magic-items">Magic Items<a class="headerlink" href="#magic-items" title="Permanent link">&para;</a></h2>
+<p>There are no +1/2/3 weapons or armor or spellcasting foci in this setting. Instead, magical items do magical things.</p>
+<hr />
+<h2 id="class-changes">Class Changes<a class="headerlink" href="#class-changes" title="Permanent link">&para;</a></h2>
+<h3 id="all-classes">All Classes<a class="headerlink" href="#all-classes" title="Permanent link">&para;</a></h3>
+<p>Any class with Optional Features from Tasha's Cauldron of Everything should have those features turned on. For features which replace other features, you may decide to not use those.</p>
+<h4 id="spellcasting">Spellcasting<a class="headerlink" href="#spellcasting" title="Permanent link">&para;</a></h4>
+<p>All spellcasting classes may be treated as Prepared Spellcasting Classes.</p>
+<h3 id="artificer">Artificer<a class="headerlink" href="#artificer" title="Permanent link">&para;</a></h3>
+<h4 id="infusions">Infusions<a class="headerlink" href="#infusions" title="Permanent link">&para;</a></h4>
+<p>The "Enhanced ____" Infusions and all effects that add a "+X" to an item are removed. These infusions replace them:</p>
+<blockquote>
+<p>More Details about [[Artificer Infusions]]</p>
+</blockquote>
+<h4 id="feature-additions">Feature Additions<a class="headerlink" href="#feature-additions" title="Permanent link">&para;</a></h4>
+<h5 id="project">Project<a class="headerlink" href="#project" title="Permanent link">&para;</a></h5>
+<p>Artificers are always working on <em>something</em>. Using the <a href="../Crafting/Crafting%20Overview/">Crafting Overview</a> rules, pick an item that your character is working on crafting. As part of any long rest, you may make progress towards that item's completion, without affecting your ability to keep watch or interfere with your ability to take a long rest.</p>
+<p>If this item is magical in nature, it must be one of the items you are able to make with an infusion you know.</p>
+<h5 id="ready-for-anything">Ready for Anything<a class="headerlink" href="#ready-for-anything" title="Permanent link">&para;</a></h5>
+<p>A number of times equal to your Intelligence modifier, you may undergo a ritual lasting one minute which swaps out an Artificer spell you have prepared for another one of that same spell level. This does not apply to cantrips.</p>
+<blockquote>
+<p>Rules Note
+Rituals require concentration to execute, so any spell being concentrated on at the start of that minute will fade.</p>
+</blockquote>
+<h3 id="fighter">Fighter<a class="headerlink" href="#fighter" title="Permanent link">&para;</a></h3>
+<h4 id="maneuvers">Maneuvers<a class="headerlink" href="#maneuvers" title="Permanent link">&para;</a></h4>
+<p>Any maneuver learned may be treated as a "prepared" maneuver, meaning that as part of a long rest, you may switch that maneuver for another which is available to you.</p>
+<h3 id="ranger">Ranger<a class="headerlink" href="#ranger" title="Permanent link">&para;</a></h3>
+<h4 id="feature-replacements">Feature Replacements<a class="headerlink" href="#feature-replacements" title="Permanent link">&para;</a></h4>
+<p>Replace Natural Explorer with Deft Explorer.
+Replace Favored Enemy with Favored Foe.</p>
+<p>For Beast Master rangers, replace Ranger’s Companion with Primal Companion.</p>
+<h3 id="rogue">Rogue<a class="headerlink" href="#rogue" title="Permanent link">&para;</a></h3>
+<p>All Theif subclass features become part of the base class.</p>
+<h3 id="sorcerer">Sorcerer<a class="headerlink" href="#sorcerer" title="Permanent link">&para;</a></h3>
+<p>All sorcerer subclasses have a list of subclass spells which are innately learned and do not count against the number of spells known.</p>
+<h4 id="font-of-magic">Font of Magic<a class="headerlink" href="#font-of-magic" title="Permanent link">&para;</a></h4>
+<p>The number of Sorcery Points you have available to you increases to be equal to "Sorcerer Level + Charisma Modifier" (minimum 2).</p>
+<h4 id="metamagic">Metamagic<a class="headerlink" href="#metamagic" title="Permanent link">&para;</a></h4>
+<p>Metamagic options are Prepared (you may switch them out at the end of a long rest). You can prepare a number of metamagic options equal to your proficiency bonus.</p>
+<h3 id="paladin">Paladin<a class="headerlink" href="#paladin" title="Permanent link">&para;</a></h3>
+<h4 id="alternate-smite-effects">Alternate Smite Effects<a class="headerlink" href="#alternate-smite-effects" title="Permanent link">&para;</a></h4>
+<p>Instead of the standard smite damage, you may cause the effects of any Smite Spell you have prepared. This does not count as casting a spell. If a smite has an ongoing effect and requires concentration, that is still the case.</p>
+<h3 id="warlock">Warlock<a class="headerlink" href="#warlock" title="Permanent link">&para;</a></h3>
+<p>Warlocks may be Int based instead of Cha based if desired.</p>
+<h4 id="invocation-spells">Invocation Spells<a class="headerlink" href="#invocation-spells" title="Permanent link">&para;</a></h4>
+<p>All Invocations spells may be cast without spending a Warlock spell slot, if they currently require such. All other limitations still apply.</p>
+<h3 id="wizard">Wizard<a class="headerlink" href="#wizard" title="Permanent link">&para;</a></h3>
+<p>TBD - Something changes to counter the prepared-ness of other spellcasters</p>
+<p>Possibly the "Ready for Anything" from artificer modifications above. If you wanna play a wizard, reach out and lets talk.</p>
+<hr />
+<h2 id="contraditions-to-raw">Contraditions to RAW<a class="headerlink" href="#contraditions-to-raw" title="Permanent link">&para;</a></h2>
+<h3 id="potions">Potions<a class="headerlink" href="#potions" title="Permanent link">&para;</a></h3>
+<p>Pulling out a potion and drinking it yourself is a bonus action.</p>
+<p>Tossing a potion from player to player is a 'free' object interaction and is fine as long as it's one of the two players' turns, or there aren't extenuating circumstances.</p>
+<p>Force-feeding a potion is an action.</p>
+<p>Force-feeding a potion on an unwilling target is a contested check similar to a grapple.</p>
+<h3 id="spell-scrolls">Spell Scrolls<a class="headerlink" href="#spell-scrolls" title="Permanent link">&para;</a></h3>
+<p>If you have an Arcana Proficiency you may attempt to cast a spell from a spell scroll by making an Arcana Check (DC equals 10 + the spell’s level). Spell Scrolls of spells not on your spellcasting modifier or Intelligence</p>
+<h3 id="short-rests">Short Rests<a class="headerlink" href="#short-rests" title="Permanent link">&para;</a></h3>
+<p>Short Rests take 10 minutes. Casting a ritual spell cannot count as a short rest.</p>
+<h3 id="fitful-rests">Fitful Rests<a class="headerlink" href="#fitful-rests" title="Permanent link">&para;</a></h3>
+<p>Away from society's safety and security, long rests are only partially effective. Instead of restoring full resources and spell slots, only half of max are recovered from a fitful long rest.</p>
+<p>The rule of thumb is "do you feel like you should be keeping watch?" If so, you're getting in a fitful rest.</p>
+<h3 id="unseen-attackers">Unseen Attackers<a class="headerlink" href="#unseen-attackers" title="Permanent link">&para;</a></h3>
+<p>A small tweak to how being unseen affects advantage and disadvantage.</p>
+<blockquote>
+<p>When a creature can't see you, you have advantage on attack rolls against it <strong>if you can see it</strong>.</p>
+</blockquote>
+<h3 id="heavily-obscured-areas">Heavily Obscured Areas<a class="headerlink" href="#heavily-obscured-areas" title="Permanent link">&para;</a></h3>
+<p>Heavily Obscured Areas (e.g. Fog Clouds, Not including full darkness) allow creatures to see well enough within 5ft around them for attacks made against unhidden creatures within that range to not fall under the "unseen attackers" rules.</p>
+<hr />
+<h2 id="augmentations-to-raw">Augmentations to RAW<a class="headerlink" href="#augmentations-to-raw" title="Permanent link">&para;</a></h2>
+<h3 id="true-ritual-casting">True Ritual Casting<a class="headerlink" href="#true-ritual-casting" title="Permanent link">&para;</a></h3>
+<p>Any spell that can be Ritual Cast that also has a material component with a gold cost can be done so without the spell prepared provided the caster can Ritual Cast spells and has access to that spell.</p>
+<h3 id="unexpected-stops">Unexpected Stops<a class="headerlink" href="#unexpected-stops" title="Permanent link">&para;</a></h3>
+<p>If an object or creature is subjected to an effect that would apply forced movement for some number of feet but they are stopped by a solid surface before that many feet can be moved, both things take 1d6 bludgeoning damage per 10ft the moving thing wasn't able to move.</p>
+<p>If the moving object or creature is going to collide with another creature of the same size or smaller, that creature must make a DEX Save (DC 10) or both creatures will be prone. On a success the moving thing does not get stopped (the creature dodged out of the way).</p>
+<h3 id="exhaustion">Exhaustion<a class="headerlink" href="#exhaustion" title="Permanent link">&para;</a></h3>
+<p>RAW doesn't use exhaustion very much but it's a good idea that allows us to tinker with the concept of "over extending."</p>
+<h4 id="going-without-sleep">Going without sleep<a class="headerlink" href="#going-without-sleep" title="Permanent link">&para;</a></h4>
+<p>We'll be using a more forgiving tweak of the Optional Rules from Xanathar's Guide to Everything:</p>
+<blockquote>
+<p>Whenever you end a 48-hour period without finishing a long rest, you must succeed on a DC 10 Constitution saving throw or suffer one level of exhaustion.</p>
+<p>It becomes harder to fight off exhaustion if you stay awake for multiple days. After the first 48 hours, the DC increases by 5 for each consecutive 24-hour period without a long rest. The DC resets to 10 when you finish a long rest.</p>
+</blockquote>
+<h4 id="exhaustive-magic">Exhaustive Magic<a class="headerlink" href="#exhaustive-magic" title="Permanent link">&para;</a></h4>
+<p>In dire circumstances, the time may come when you want to make magic flow more freely from your body. For each "magical resource" (class feature or spellcasting, ask if you're not sure) you spend where you would normally not be allowed to, make a constitution save against your spellcasting DC. If you succeed, the spell is cast. If you fail, the spell is not cast and the slot is lost. Either way, the caster gains one level of <a href="https://www.dndbeyond.com/sources/phb/appendix-a-conditions#Exhaustion">exhaustion</a>.</p>
+<p>Explanation: Some magical class features with resources attached (Arcane Shot) specify that they are only allowed to be used once per turn. Spellcasting falls into this bucket as well. This ruling allows multiple leveled spells to be attempted on one turn in dire straits.</p>
+<blockquote>
+<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
+<p>Vista is close to death and within range of Cheya's <a href="https://www.dndbeyond.com/spells/healing-word">Healing Word (Lv1)</a> spell. She also wants to cast <a href="https://www.dndbeyond.com/spells/entangle">Entangle (Lv1)</a> on this turn. RAW the <a href="https://www.dndbeyond.com/sources/phb/spellcasting#BonusAction">rules about casting times</a> state that she can not cast both of these spells on the same turn.</p>
+<p>With Exhaustive Magic, Cheya can choose which spell to cast first for a garunteed cast, then attempt to extert herself to cast the second spell, gaining a point of exhaustion.</p>
+<ol>
+<li>Cheya casts Healing Word, she doesn't want Vista to die.</li>
+<li>Cheya tries to cast Entangle, make CON Save against her own Spell Save DC.<ol>
+<li>Save is successful, Cheya casts entangle and gains a level of exhaustion.</li>
+<li>Save fails, Cheya burns a Level 1 spell slot and gains a level of exhaustion.</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<hr />
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Artificer%20Infusion%20Replacements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Artificer Infusion Replacements" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Artificer Infusion Replacements
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Making%20Camp/" class="md-footer__link md-footer__link--next" aria-label="Next: Making Camp" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Making Camp
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>

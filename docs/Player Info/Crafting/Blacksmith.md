@@ -5,6 +5,7 @@
 Blacksmiths shape metal to their whimsy in order to create protective armor, biting weapons, and other miscellaneous but useful things.
 
 Often uses:
+
 - Smith's Tools
 
 ## Materials

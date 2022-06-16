@@ -5,6 +5,7 @@
 Chemistry is by nature always in demand, as all of the things a chemist makes are either perishable or consumable, or both.
 
 Often uses:
+
 - Alchemist's Supplies
 - Poisoner's Kit
 - Herbalism Kit

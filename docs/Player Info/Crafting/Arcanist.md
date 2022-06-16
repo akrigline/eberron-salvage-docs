@@ -5,6 +5,7 @@
 Arcanists bind Magical energies in otherwise ordinary objects to exhibit extraordinary powers. This binding is a difficult and expensive process, but the outcome is often wondrous.
 
 Often uses:
+
 - Calligrapher's Supplies
 - Jeweler's Tools
 

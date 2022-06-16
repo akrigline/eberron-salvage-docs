@@ -5,6 +5,7 @@
 Textile workers often deal with more flexible materials than other disciplines care to deal with.
 
 Often uses:
+
 - Cobbler's Tools
 - Leatherworker's Tools
 - Weaver's Tools

@@ -5,6 +5,7 @@
 Scribing truths, lies, and binding magics through word-craft are the specialties of Calligraphers.
 
 Often uses:
+
 - Cartographer's Tools
 - Calligrapher's Supplies
 - Painter's Supplies

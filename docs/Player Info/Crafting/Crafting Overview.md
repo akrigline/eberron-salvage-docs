@@ -14,7 +14,9 @@ When a Background or Class feature would grant a Tool Proficiency, replace it in
 
 ### [[Engineer]] (Intelligence and Strength)
 Large scale projects: defenses, transportation, siege works. Can handle themselves with Masonry, Carpentry, and a little Metalworking.
+
 Often uses:
+
 - Mason's Tools
 - Carpenter's Tools
 - Smith's Tools
@@ -23,25 +25,33 @@ Often uses:
 
 ### [[Woodworker]] (Dexterity and Strength)
 Smaller scale Wood-craft, capable of Wandwhitling, Woodcarving, Fletching.
+
 Often uses:
+
 - Woodcarver's Tools
 - Carpenter's Tools
 
 ### [[Blacksmith]] (Strength)
 Smaller scale Metalwork, Armor, Weapons, and other miscellaneous metal gear.
+
 Often uses:
+
 - Smith's Tools
 
 ### [[Chemist]] (Wisdom and Intelligence)
 Works with chemicals mundane and magical, Potionmaking, Poisoncraft, and similar concoctions.
+
 Often uses:
+
 - Alchemist's Supplies
 - Poisoner's Kit
 - Herbalism Kit
 
 ### [[Calligrapher]] (Dexterity and Charisma)
 Careful hands which scribe precise works of literature or art, Capable of  Scrollscribing, Cartography, Runecarving, Painting, Forgeries
+
 Often uses:
+
 - Cartographer's Tools
 - Calligrapher's Supplies
 - Painter's Supplies
@@ -49,20 +59,26 @@ Often uses:
 
 ### [[Arcanist]] (Intelligence and Wisdom)
 Binds magic to mundane items directly through Enchantment.
+
 Often uses:
+
 - Calligrapher's Supplies
 - Jeweler's Tools
 
 ### [[Culinary Artist]] (Wisdom and Constitution)
 Working with substances designed to nourish and fortify. Cooking, Baking, and Brewing
+
 Often uses:
+
 - Cook's Utensils
 - Brewer's Supplies
 - Herbalism Kit
 
 ### [[Textile Worker]] (Dexterity and Charisma)
 Working with generally flexible materials, Leather, Tailoring, Knot-tying, Weaving, Cobbling, Disguises
+
 Often uses:
+
 - Cobbler's Tools
 - Leatherworker's Tools
 - Weaver's Tools
@@ -71,7 +87,9 @@ Often uses:
 
 ### [[Tinkerer]] (Intelligence and Dexterity)
 Fine detail work usually with moving parts, Jewelmaking, Glassblowing, Pottery, Trapsmithing, Locksmithing
+
 Often uses:
+
 - Tinker's Tools
 - Jeweler's Tools
 - Glassblower's Tools

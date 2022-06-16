@@ -5,6 +5,7 @@
 Tinkers are known for tiny marvels with intricate details and often moving parts.
 
 Often uses:
+
 - Tinker's Tools
 - Jeweler's Tools
 - Glassblower's Tools
